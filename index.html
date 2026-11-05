@@ -1,0 +1,86 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f1ea"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Fuji">
+<title>X-T30 III Cheat Sheet</title>
+<link rel="icon" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--paper:#f4f1ea;--grey:#555;--lt:#d9d5cc}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0 auto;max-width:640px;background:var(--paper);color:var(--ink);font:16px/1.45 'Space Grotesk',system-ui,sans-serif;padding:env(safe-area-inset-top) 16px 60px;background-image:radial-gradient(#0000000d 1px,transparent 1.2px);background-size:6px 6px}
+header{margin:26px 0 14px;text-align:center}
+h1{font:400 54px/0.95 'Bangers',cursive;letter-spacing:2px;margin:0;color:#fff;-webkit-text-stroke:2.5px var(--ink);text-shadow:4px 4px 0 var(--ink);transform:rotate(-3deg)}
+h1 small{display:block;font:20px 'Permanent Marker';-webkit-text-stroke:0;color:var(--ink);text-shadow:none;letter-spacing:0;transform:rotate(2deg);margin-bottom:6px}
+h2{font:400 30px 'Bangers';letter-spacing:1.5px;margin:30px 0 4px}
+.divider{height:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='10'%3E%3Cpath d='M0 5 Q10 0 20 5 T40 5' fill='none' stroke='%23111' stroke-width='2.5'/%3E%3C/svg%3E") repeat-x;opacity:.8;margin-bottom:14px}
+.card{position:relative;background:#fff;border:3px solid var(--ink);border-radius:12px;padding:14px;box-shadow:6px 6px 0 var(--ink);margin:0 0 18px}
+.card:nth-of-type(odd){transform:rotate(-.6deg)}.card:nth-of-type(even){transform:rotate(.5deg)}
+.card::before{content:"";position:absolute;top:-11px;left:50%;width:60px;height:20px;margin-left:-30px;background:#0000001f;border:1px solid #0002;transform:rotate(-3deg)}
+.t{font-weight:700;font-size:17px}.n{font-size:15px;color:var(--grey);margin-top:2px}
+.row{padding:9px 0;border-top:2px dashed var(--lt)}.row:first-child{border-top:0}
+.chip{display:inline-block;font-size:12px;font-weight:600;border:2px solid var(--ink);border-radius:20px;padding:1px 8px;text-transform:uppercase;letter-spacing:.5px}
+.chip.xp{background:var(--ink);color:#fff}.chip.pr{border-style:dashed}
+.chips{display:flex;gap:8px;flex-wrap:wrap;padding:4px 2px 14px}
+.cbtn{font:600 15px 'Space Grotesk';border:2.5px solid var(--ink);border-radius:22px;background:#fff;padding:8px 14px;min-height:42px;color:var(--ink)}
+.cbtn.on{background:var(--ink);color:#fff;box-shadow:3px 3px 0 #0005}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:8px 6px;border-bottom:2px dashed var(--lt)}th{font:18px 'Permanent Marker'}
+td b{font:22px 'Bangers';letter-spacing:1px;font-weight:400}
+.note{border:3px dashed var(--ink);border-radius:14px;padding:10px 12px;font-size:14px;background:#fff}
+a{color:var(--ink);font-weight:600}
+.legend{font-size:13px;margin:6px 0 0}
+</style></head><body>
+<header><h1><small>Fujifilm</small>X-T30 III<br>Cheat Sheet</h1></header>
+<p class="note"><span class="chip xp">Verified</span> = Fujifilm specs/manual. <span class="chip pr">Suggested</span> = starting points, not factory settings. Lens assumed to be the kit <b>XC13-33mm f/3.5-6.3 OIS</b> (≈20–50mm equiv.); check the barrel.</p>
+
+<h2>Scenario presets</h2><div class="divider"></div>
+<div class="chips" id="chips"></div>
+<div class="card" id="preset"></div>
+
+<h2>Exposure modes</h2><div class="divider"></div>
+<div class="card"><table><tr><th>Shutter</th><th>Aperture</th><th>Mode</th></tr>
+<tr><td>A</td><td>Auto</td><td><b>P</b></td></tr><tr><td>A</td><td>You</td><td><b>A</b></td></tr>
+<tr><td>You</td><td>Auto</td><td><b>S</b></td></tr><tr><td>You</td><td>You</td><td><b>M</b></td></tr></table>
+<p class="n">The XC lens has no aperture ring, so aperture is set with the front command dial. See the manual's "Choosing a Shooting Mode" for how Auto aperture is selected with this lens. Use exposure compensation for backlight, snow and bright skies.</p></div>
+
+<h2>Everyday setup</h2><div class="divider"></div>
+<div class="card">
+<div class="row"><div class="t">Files <span class="chip pr">Suggested</span></div><div class="n">JPEG Fine + RAW. JPEG carries the film sim; RAW is your backup negative.</div></div>
+<div class="row"><div class="t">Film sim dial <span class="chip xp">Verified</span></div><div class="n">PROVIA, Velvia, ASTIA, Classic Chrome, REALA ACE, ACROS, plus FS1–FS3 slots that can save recipes (20 sims total in menu).</div></div>
+<div class="row"><div class="t">White balance <span class="chip pr">Suggested</span></div><div class="n">Auto to start.</div></div>
+<div class="row"><div class="t">Auto ISO <span class="chip pr">Suggested</span></div><div class="n">Set a minimum shutter (1/250 moving kids, 1/125 people, 1/60 still scenes). It's a floor the camera may go below at max ISO, so watch shutter in dim light.</div></div>
+<div class="row"><div class="t">Autofocus <span class="chip pr">Suggested</span></div><div class="n">AF-S + single point for still subjects; AF-C + Face/Eye detection for moving people.</div></div>
+<div class="row"><div class="t">Burst <span class="chip pr">Suggested</span></div><div class="n">Low-speed (CL). Fastest rates use the electronic shutter and fill cards fast.</div></div>
+</div>
+
+<h2>Shutter &amp; stabilization</h2><div class="divider"></div>
+<div class="card">
+<div class="row"><div class="t">Default: mechanical shutter</div><div class="n"><span class="chip xp">Verified</span> Mechanical to 1/4000; electronic to 1/32000 and silent.</div></div>
+<div class="row"><div class="t">Electronic shutter gotchas</div><div class="n"><span class="chip xp">Verified</span> Fujifilm: may not suit fast subjects or handheld shooting; no flash. Can also band under LED light.</div></div>
+<div class="row"><div class="t">No IBIS</div><div class="n"><span class="chip xp">Verified</span> No in-body stabilization. Stills rely on lens OIS; keep it on.</div></div>
+<div class="row"><div class="t">Video stabilization</div><div class="n"><span class="chip xp">Verified</span> Digital stabilization, movie mode only; expect a crop.</div></div>
+<div class="row"><div class="t">Slow kit lens</div><div class="n">f/6.3 at 33mm pushes ISO up indoors.</div></div>
+</div>
+
+<h2>Simple video</h2><div class="divider"></div>
+<div class="card"><div class="n"><span class="chip xp">Verified</span> Up to 6.2K/30p, 4K/60p, Full HD/240p.<br><span class="chip pr">Suggested</span> 4K 30p, AF-C with Face detection, OIS on, digital stabilization only when needed.</div></div>
+
+<p class="note">Before shooting: glance at the mode settings and the film sim dial. Odd results usually trace back to one of them.</p>
+
+<h2>Official sources</h2><div class="divider"></div>
+<div class="card">
+<div class="row"><a href="https://fujifilm-dsc.com/en/manual/x-t30-iii/">X-T30 III Owner's Manual</a></div>
+<div class="row"><a href="https://www.fujifilm-x.com/en-us/products/cameras/x-t30-iii/specifications/">X-T30 III Specifications</a></div>
+<div class="row"><a href="https://app.fujifilm-dsc.com/en/manual/x-t30-iii/menu_shooting/image_quality_setting/index.html">Image Quality Settings (film sims)</a></div>
+</div>
+<script>
+const P={"Everyday":[["Mode","A, f/5.6–8"],["ISO","Auto, min 1/250"],["Focus","AF-C, Zone/Tracking, Face/Eye on"],["Look","Classic Chrome or REALA ACE"]],
+"Portrait":[["Mode","A, widest aperture; zoom to 33mm and get close"],["ISO","Auto, min 1/125"],["Focus","AF-S, single point or Face/Eye"],["Look","ASTIA or PRO Neg. Std"]],
+"Landscape":[["Mode","A, f/8"],["ISO","Base ISO"],["Focus","AF-S, single point"],["Look","Velvia; try −⅓ EV for bright skies"]],
+"Indoor":[["Mode","A, wide open"],["ISO","Auto up to ~6400, min 1/60 (faster for moving people)"],["Focus","AF-S or AF-C with Face/Eye"],["Other","OIS on; mechanical shutter under LED lights"]],
+"Action":[["Mode","S, 1/500+"],["ISO","Auto"],["Focus","AF-C, Tracking, subject detection on"],["Drive","CL burst"]]};
+const c=document.getElementById('chips'),p=document.getElementById('preset');
+function show(k){[...c.children].forEach(b=>b.classList.toggle('on',b.textContent===k));
+p.innerHTML='<div class="t">'+k+' <span class="chip pr">Suggested</span></div>'+P[k].map(r=>'<div class="row"><div class="t">'+r[0]+'</div><div class="n">'+r[1]+'</div></div>').join('');}
+Object.keys(P).forEach(k=>{const b=document.createElement('button');b.className='cbtn';b.textContent=k;b.onclick=()=>show(k);c.appendChild(b)});show('Everyday');
+</script></body></html>
